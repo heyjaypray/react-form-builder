@@ -8,7 +8,7 @@ import { EventEmitter } from 'fbemitter';
 import { injectIntl } from 'react-intl';
 import FormValidator from './form-validator';
 import FormElements from './form-elements';
-import { TwoColumnRow, ThreeColumnRow, FourColumnRow } from './multi-column';
+import { TwoColumnRow, ThreeColumnRow, FourColumnRow, FiveColumnRow, SixColumnRow } from './multi-column';
 import CustomElement from './form-elements/custom-element';
 import Registry from './stores/registry';
 
@@ -373,6 +373,10 @@ class ReactForm extends React.Component {
           return this.getInputElement(item);
         case 'CustomElement':
           return this.getCustomElement(item);
+        case 'SixColumnRow':
+          return this.getContainerElement(item, SixColumnRow);
+        case 'FiveColumnRow':
+          return this.getContainerElement(item, FiveColumnRow);
         case 'FourColumnRow':
           return this.getContainerElement(item, FourColumnRow);
         case 'ThreeColumnRow':

@@ -18,6 +18,8 @@ type BaseElement = {
     | "Two Column Row"
     | "Three Column Row"
     | "Four Column Row"
+    | "Five Column Row"
+    | "Six Column Row"
     | "Image"
     | "Rating"
     | "Date"

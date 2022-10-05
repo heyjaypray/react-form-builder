@@ -202,6 +202,22 @@ class Toolbar extends React.Component {
         field_name: 'four_col_row_',
       },
       {
+        key: 'FiveColumnRow',
+        canHaveAnswer: false,
+        name: intl.formatMessage({ id: 'five-columns-row' }),
+        label: '',
+        icon: 'fas fa-columns',
+        field_name: 'five_col_row_',
+      },
+      {
+        key: 'SixColumnRow',
+        canHaveAnswer: false,
+        name: intl.formatMessage({ id: 'six-columns-row' }),
+        label: '',
+        icon: 'fas fa-columns',
+        field_name: 'six_col_row_',
+      },
+      {
         key: 'Image',
         name: intl.formatMessage({ id: 'image' }),
         label: '',
