@@ -358,7 +358,6 @@ class ReactForm extends React.Component {
 
     const items = data_items.filter(x => !x.parentId).map(item => {
       if (!item) return null;
-      console.log({item})
       switch (item.element) {
         case 'TextInput':
         case 'EmailInput':
